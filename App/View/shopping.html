@@ -1,0 +1,32 @@
+<dl>
+    <dt>
+         <span class="yuan">
+            <em ng-class="{en:data.flag}" ng-click="change(index)">
+                <b>✔</b>
+            </em>
+        </span>
+        <i class="icon iconfont icon-yonghu"></i>
+        <b>北京聚美特商贸</b>
+        <i class="icon iconfont icon-angle-right"></i>
+        <em>编辑</em>
+    </dt>
+    <dd>
+        <span class="yuan">
+            <em ng-class="{en:data.flag}" ng-click="change(index)">
+                <b>✔</b>
+            </em>
+        </span>
+        <ul>
+            <li><img src="App/Content/img/img_01.png" alt=""></li>
+            <li>
+                <span>{{data.name}}</span>
+                <span>{{data.info}}</span>
+                <span><i>￥</i>{{data.price}}</span>
+            </li>
+        </ul>
+        <p>
+            <a href="" ng-click="changeCount('-')">-</a><a href="">{{data.num}}</a><a href="" ng-click="changeCount('+')">+</a>
+        </p>
+    </dd>
+</dl>
+

@@ -1,0 +1,45 @@
+<div class="box">
+    <header class="Top">
+        <a href=""></a>
+        <a href="">购物车(<span>6</span>)</a>
+        <a href="">编辑<i class="icon iconfont icon-xiaoxi"></i></a>
+    </header>
+    <main class="content">
+        <shopping-directive ng-repeat="data in datas" data="data" index="{{$index}}"></shopping-directive>
+        <p class="close">
+            <span>
+                <span class="yuan">
+                    <em ng-class="{en:flag}" ng-click="allChange()">
+                        <b>✔</b>
+                    </em>
+                </span>
+                <b>全选</b>
+            </span>
+            <span>
+                合计：<em>￥{{goodsPrice}}</em>
+            </span>
+            <span>
+                <button>结算（<b>{{goodsCount}}</b>）</button>
+            </span>
+        </p>
+    </main>
+
+    <div class="Bottom">
+        <a href="">
+            <i class="icon iconfont icon-shouye"></i>
+            首页
+        </a>
+        <a href="">
+            <i class="icon iconfont icon-shouye"></i>
+            首页
+        </a>
+        <a href="">
+            <i class="icon iconfont icon-shouye"></i>
+            首页
+        </a>
+        <a href="">
+            <i class="icon iconfont icon-shouye"></i>
+            首页
+        </a>
+    </div>
+</div>
